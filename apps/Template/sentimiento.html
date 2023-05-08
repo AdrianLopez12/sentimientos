@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sentimiento</title>
+    <link rel="stylesheet" href="stilo.CSS" />
+  </head>
+  <body>
+    <form action="/predecir/" method="post">
+      {% csrf_token %}
+      <p>Texto: <input name="texto" /></p>
+      <p><input type="submit" value="PREDECIR" /></p>
+    </form>
+  </body>
+</html>
